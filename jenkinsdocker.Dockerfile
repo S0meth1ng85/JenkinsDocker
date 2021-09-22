@@ -6,7 +6,9 @@ RUN apt-get update -qq && apt-get install -qqy \
     ca-certificates \
     curl \
     lxc \
-    iptables
+    iptables && \
+	update-alternatives --set iptables /usr/sbin/iptables-legacy && \
+	update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
     
 RUN curl -sSL https://get.docker.com/ | sh
 
