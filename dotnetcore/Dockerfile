@@ -1,7 +1,6 @@
 # pulled from https://stackoverflow.com/questions/48104954/adding-net-core-to-docker-container-with-jenkins
 # Thanks to rockstar (Dockstar?) Dennis Fazekas
 
-###Test Commit
 
 FROM jenkins/jenkins:lts
 USER root
